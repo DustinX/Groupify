@@ -2,7 +2,7 @@
 
 Project Ideas:
 
-1. 
+1.
 How to organize teams in fireteams by ideal composition using traitify.
 Groups of 4.  Uses military psychology for what makes effective teams.
 Fireteam more effective than larger team, or no teams at all.  Be close knit.
