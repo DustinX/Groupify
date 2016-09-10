@@ -67,10 +67,23 @@ Flesh out idea
 
 Specifics of what our software will do
 	Interaction with Traitify API
+	Having candidates take Traitify test
 	Creating groups
 		Using entire existing engineering team
+			Split groups into fireteams of 4 members each
+			Find best way to group them so each team has it's role covered sufficiently
+			Create teams of 3 to handle pool that is not a multiple of 4
 		Using interviewees
+			Same algorithm as above, but only have to create one fireteam.  Can leave all other candidates ungrouped.
 
+How our app will do it:
+
+	Creating Teams:
+		Legend:
+			L: leader
+			S: Social
+			
+		Example cases:
 
 
 
