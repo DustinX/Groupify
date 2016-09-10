@@ -17,22 +17,27 @@ Better to just give a team an advisor or tech resource instead of breaking up te
 Improves employee retention.
 Improves committment and energy for project.
 
-?Thomas insights on 
-	team composition
-	leadership
-	team sizes
-	anything else?
+Questions:
+	?Thomas insights on 
+		team composition
+		leadership
+		team sizes
+		anything else?
 
 APIs:
 Traitify
-Horizon thing for predicting good team comps.
+Haven thing for predicting good team comps.
 
 
 2.
 Personality profile for figuring out who is good guy and who is bad guy in the field, quickly, accurately.
-*What part would we play, in addition to what Traitify already has?
+
+Questions:
+	*What part would we play, in addition to what Traitify does?
 
 
+APIs:
+Traitify
 
 
 
