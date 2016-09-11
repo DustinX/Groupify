@@ -1,14 +1,4 @@
 
-Get teams contact information
-Add Thomas to starred contacts
-
-Get everyone on 
-	slack
-	github
-	accelerator
-
-Flesh out idea
-
 	Philosophy:
 		Teams work best if grouped into squads, similar to how the military performs.  Teammembers will work harder and collaborate better in these groups than they would as part of a larger, general group.  Teammembers will work harder to not let each other down.  They will feel more comfortable asking for help from each other.
 		From wikipedia:
@@ -29,7 +19,9 @@ Flesh out idea
 
 		The important thing for team performance is member buy in, member work ethic, and team dynamic, not subject knowledge.  The subject knowledge is not as important, and can be learned via internet or outside technical resource.  I.e., teams should not be organized based on subject knowledge, but on team dynamic.  The subject knowledge can then be fed to the team.  This may also have the side effect of creating more creative, disruptive, and effective solutions.  Evolutionary ideas come from newcomers to a subject.
 			Story: Plenty of entreprenuers go into a field without knowing it, and learn it and create things better than incumbent experts.
-.
+
+			Everyone at the hackathon got to experience what it is like working in a group.  Doesn't it seem like it would be nice to have all of these personality types in your group?  Maybe this could even be used to make groups in future hackathons.  Or use it on half the people and poll people afterwards and see which groups had a better experience.
+
 	Parts:
 		Our planning:
 			Parameters:
@@ -195,22 +187,6 @@ Future possibilities:
 
 
 
-Build interface
-API
-	how to parse it
-	how to send request/integrate
-How to combine people
-	Dustin
-	Some already there?
-		Show me
-
-
-
-
-
-
-
-
 order for placing
 
 group people by this
@@ -233,3 +209,16 @@ code
 
 perfecting grouping algorithm not as important as creating something that works.
 An app that doesn't work looks the same as nothing to those on the outside.
+
+
+create 40 people with help of Traitify people
+
+
+Create script that pulls out the API responses
+
+
+Get the code for creating groups working
+Get test people created
+Find out how to get personality type for test people
+Create code to populate our database with information from API
+Figure out how to display the results using the output of the group putter
