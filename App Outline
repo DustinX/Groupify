@@ -10,13 +10,22 @@ Get everyone on
 Flesh out idea
 
 	Philosophy:
-		Teams work best if grouped into fireteams, similar to how the military performs.  Teammembers will work harder and collaborate better in these groups than they would as part of a larger, general group.  Teammembers will work harder to not let each other down.  They will feel more comfortable asking for help from each other.
+		Teams work best if grouped into squads, similar to how the military performs.  Teammembers will work harder and collaborate better in these groups than they would as part of a larger, general group.  Teammembers will work harder to not let each other down.  They will feel more comfortable asking for help from each other.
+		From wikipedia:
+		"Historically, nations with effective fireteam organization have had significantly better performance from their infantry units in combat than those limited to operations by traditionally larger units."
+		and
+		"Psychological studies by the United States Army have indicated that a soldier's' survivability and the willingness to fight is more heavily influenced by the desire to both protect and avoid failing to support other members of the fireteam than by abstract concepts or ideologies."
+		Source: https://en.wikipedia.org/wiki/Fireteam
 
-		Teams are not moved around or grouped around projects.  The fireteam is the core.  Projects are assigned to fireteams, and large projects can be assigned to (and probably broken up for) multiple fireteams.  Fireteams are kept together between projects.
+		Target is medium to large companies with software engineer divisions.  Our app would break the division up into groups of 4 people with certain personality combinations.
+
+		Teams are not moved around or grouped around projects.  The squad is the core.  Projects are assigned to squads, and large projects can be assigned to (and probably broken up for) multiple squads.  squads are kept together between projects.
 
 		Teams are composed based on personality types.  The assumption is that a certain composition of personality types works better together.  Traitify will be used to determine a person's personality type.
 		Current best composition idea is: Leadership, Work ethic, Social, Creative.  This composition can possibly be changed based on testing data.
 		Leader leads.  Social person keeps team communicating and bonding, most likely to organize meetings outside of work and social things, helps resolve disputes and friction.  Creative helps come up with ideas and solutions to problem, strong at deep thinking.  Work ethic keeps team focused on deliverable and on task and motivation.  All teammembers have base line techincal skill and so can all contribute in that regard, and have basic likability and teamwork aptitude.
+
+		Think Raidfind in World of Warcraft.  Takes a group of people and forms balanced parties.  You'd want each party to have a tank, damage dealer, healer, etc.  You wouldn't want to have a party of 5 healers.  The same probably applies to personality types.  You wouldn't want a group with two leadership style personalities because they would butt heads often.  You would want to have a group with someone who is especially creative so they can come up with solutions when they get stuck.  You would also want someone who can meet deadlines and keep the group focused on priorities.
 
 		The important thing for team performance is member buy in, member work ethic, and team dynamic, not subject knowledge.  The subject knowledge is not as important, and can be learned via internet or outside technical resource.  I.e., teams should not be organized based on subject knowledge, but on team dynamic.  The subject knowledge can then be fed to the team.  This may also have the side effect of creating more creative, disruptive, and effective solutions.  Evolutionary ideas come from newcomers to a subject.
 			Story: Plenty of entreprenuers go into a field without knowing it, and learn it and create things better than incumbent experts.
@@ -29,7 +38,7 @@ Flesh out idea
 				project needs
 				Or maybe needs to stay the same for psychological reasons)
 
-				Fireteam size:
+				squad size:
 					4 people
 					minimum: 3 people
 				Compostion:
@@ -45,24 +54,24 @@ Flesh out idea
 
 
 		Initial adoption:
-			Break up total engineering team into fireteams
+			Break up total engineering team into squads
 				Have all of engineering team take Traitify assessment
-				Fireteams created by our software
+				squads created by our software
 					Looks for best way to combine members to best create ideal teams
 						Maybe develop next best combinations in case ideal isn't found
 							Or group based on whoever has the strongest in those categories
 							Figure out how Traitify classifies people
-				(our software is done at this point.  We just give the company the plan for how to use the fireteams from here)
+				(our software is done at this point.  We just give the company the plan for how to use the squads from here)
 				Projects assigned to teams
 				Technical resources assigned to teams
 
 		Ongoing implementation:
-			When workload exceeds capacity, a new fireteam is created
-				Fireteams shouls not exceeed 4 people.  Therfore, an attempt to increase capacity should not be made by adding new individuals to existing fireteams, and increasing size of fireteams.
-				Fireteam ideally created all at once, to increase comraderie, similar to military bootcamp
+			When workload exceeds capacity, a new squad is created
+				squads shouls not exceeed 4 people.  Therfore, an attempt to increase capacity should not be made by adding new individuals to existing squads, and increasing size of squads.
+				squad ideally created all at once, to increase comraderie, similar to military bootcamp
 					Story: When I was hired at my last job, I was hired as a group of 4.  We went through onboarding together and had lunch together for the first 3 weeks.  After that, the difference in our technical abilities had us work on different things, but I felt a bond with them the whole year I was there.
 				Interviewees are given Traitify assessment
-				Best candidates are picked based on technical ability and fireteam composition needs
+				Best candidates are picked based on technical ability and squad composition needs
 				If candidates reject offer, replacement candidate chosen (selected by our software) based on composition needs
 
 Specifics of what our software will do
@@ -70,20 +79,89 @@ Specifics of what our software will do
 	Having candidates take Traitify test
 	Creating groups
 		Using entire existing engineering team
-			Split groups into fireteams of 4 members each
+			Split groups into squads of 4 members each
 			Find best way to group them so each team has it's role covered sufficiently
 			Create teams of 3 to handle pool that is not a multiple of 4
 		Using interviewees
-			Same algorithm as above, but only have to create one fireteam.  Can leave all other candidates ungrouped.
+			Same algorithm as above, but only have to create one squad.  Can leave all other candidates ungrouped.
+
+	
 
 How our app will do it:
 
 	Creating Teams:
 		Legend:
-			L: leader
+			L: Leader
 			S: Social
-			
+			C: Creative
+			W: Work ethic
+
+
+		For this exercise we will get down to 4 combinations by taking the average of 2 of the 7 types they provide to get to the 4 we will use.  The 4 we will use may not be the best, but it is fine for this exercise.  The best to use can be figured out through testing.
+
+		Theirs:
+			Adventurous
+			Charismatic
+			Mellow
+			Rational
+			Reliable
+			Social
+			Thoughtful
+
+
+			We are keying off of "personality_traits"
+
+			Leader = Adventurous + Charismatic
+			Social = Thoughtful + Social
+			Creative = Rational + Mellow
+			Work Ethic = Reliable
+
+
+			One person:
+			L 	80
+			S   50
+			C   20
+			W   30
+
+			L
+
+			L   .8
+
+
 		Example cases:
+			Input:
+				40 people
+				L x 10
+				S x 15
+				C x 15
+				W x 10
+
+			Output:
+				LSCW x 10
+				
+
+				Three cases:
+					L 8
+					S 2
+					C 2
+					W 2
+
+		Algorithm:
+			find shortage
+				find the trait with the least people above 6
+			Assign people to that trait starting with the person with the highest aptitude in that, and the lowest aptitude in something else
+
+
+		Our app would need to consider:
+			Each person's primary personality type
+			The intensity of their primary personality type
+
+		Going forward, companies might want to hire so that they have the right number of personality types.
+
+		Place specialists
+			Find people with 3 scores 3 or less and one score 5 or more
+		Next pass, is shortage
+			with importance breaking ties
 
 
 
@@ -93,3 +171,65 @@ Flesh out how it will do it (high level)
 flesh out algorithm
 divide up work
 start coding
+
+
+Ideas:
+	People could take test and associate the results with their social media accounts (LinkedIn, Monster, etc.).
+	Then a crawler finds that and uses it as an additional factor for picking candidates (addition to languages known, years of experience, etc.).
+
+
+
+Questions:
+	What is target user?
+		Medium to large coding engineering teams
+
+	Will work be assigned to teammembers based on personality type?  I.e. will front end UI be assigned to Creative?
+		First focus is on team cohesion/dynamic
+		But, how to assigned work is good question/important.
+
+Future possibilities:
+	Figure out what the important personality types are.
+	Figure out how to group when not perfect mix of people
+	Figure out what the most productive personality combination is
+	Figure out what the ideal team size is
+
+
+
+Build interface
+API
+	how to parse it
+	how to send request/integrate
+How to combine people
+	Dustin
+	Some already there?
+		Show me
+
+
+
+
+
+
+
+
+order for placing
+
+group people by this
+
+specialists
+	place
+
+multiskill (everyone else)
+	shortage
+		tie breaker by importance
+
+
+generalists
+	fill gaps
+
+code 	
+	grouping people by number of specialties - Dustin
+	adding people to answer array - ?
+	determing which speciality to use for multiskill (shortage/importance) - Ken
+
+perfecting grouping algorithm not as important as creating something that works.
+An app that doesn't work looks the same as nothing to those on the outside.
