@@ -32,9 +32,10 @@ function createGroups(array) {
   /// console.log(specialists);
   leftover = addToGroup(specialists, answer);
 
-  //add the mixed
 
   //add generalists last to fill in the empty slots
+  //but figure out generalists after specialists and before mixed
+  //anyone not a specialist or generalist is mixed
   var generalists = findGeneralists(array);
   array = generalists[1];
   generalists = generalists[0];
@@ -45,6 +46,10 @@ function createGroups(array) {
   // console.log(generalists);
   generalists.push(...leftover);
   //console.log(generalists);
+  
+  //Mixed is who is left over in array at this point
+  //add them in effective order
+  assignMixed(array);
 
   //just add the rest of the people in any open slots
   addRest(generalists, answer);
@@ -134,6 +139,21 @@ function findSpecialists(array) {
 
 
 }
+
+
+function assignMixed(array){
+  
+  
+  //identify shortage groups
+  //assign to shortage startingn from person with highest proficiency
+  //anyone left over just give to generalists, since their specialty can't be used
+  
+  
+  
+  
+  
+}
+
 
 function findGeneralists(array) {
 
@@ -300,43 +320,40 @@ function displayGroups(answer){
   createGroups(
     [{
         id: "Dan",
-        L: 20,
-        S: 20,
+        L: 40,
+        S: 30,
         C: 80,
         W: 20
       }, {
         id: "Joe",
-        L: 20,
-        S: 20,
+        L: 30,
+        S: 90,
         C: 80,
-        W: 20
+        W: 40
       }, {
         id: "Dustin",
-        L: 20,
-        S: 20,
+        L: 10,
+        S: 30,
         C: 80,
-        W: 20
+        W: 50
       }, {
         id: "Steve",
-        L: 20,
-        S: 20,
+        L: 60,
+        S: 10,
         C: 80,
         W: 20
       }, {
         id: "David",
-        L: 20,
+        L: 23,
         S: 20,
-        C: 80,
-        W: 20
-      },
-
-
-      {
+        C: 81,
+        W: 15
+      }, {
         id: "Jean",
-        L: 20,
+        L: 25,
         S: 20,
         C: 80,
-        W: 20
+        W: 61
       }, {
         id: "Neil",
         L: 20,
@@ -367,9 +384,7 @@ function displayGroups(answer){
         S: 20,
         C: 80,
         W: 20
-      },
-
-      {
+      }, {
         id: "Ken",
         L: 80,
         S: 20,
@@ -393,11 +408,7 @@ function displayGroups(answer){
         S: 40,
         C: 80,
         W: 20
-      },
-
-
-
-      {
+      }, {
         id: "Mark",
         L: 30,
         S: 20,
