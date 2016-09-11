@@ -1,0 +1,51 @@
+
+
+Problem
+	groups too large
+	groups have personality types that don't compliment each other
+	Two leader types will butt heads
+	A group of 4 creatives will never actually finish the
+	Bond with team leads to
+		Less likely to leave company
+		More engaged in work
+		Less likely to be overly stressed because have team support
+
+Our solution
+	Rationale behind ours
+		dating sites use compatibility
+		Wikipedia fireteam quote 1
+		Wikipedia fireteam quote 2
+	Projects are moved around and divided, squads stay together
+	Squads get technical resource as needed, technical resource is not added to squad
+		Creative, disruptive, evolutionary ideas come from newcomers to a field
+	The benefits of the cohesion of the small team and compatibility of their personality types will create engagement and flow that is more benficial than grouping by specialization would be
+		Attitude not aptitude.  Nothing beats hard work.  
+	People do need baseline technical ability, responsibility, and likability
+	How you get along with your coworkers is a huge part of job satisfaction
+	
+
+
+How it works
+	Show our site
+	Employer sends out assessment invite to employees
+	Employer sends us identifier for their employees
+	Employees take assessment
+	We use API to get results
+	We create groups
+	We send groups to employer
+	Our grouping algorithm
+		3 categories
+			specialists
+			generalists
+			multi-skill
+		assign by shortage
+
+	Additional applications
+		hiring
+			Hire squads all at once and onboard together
+			Have applicants take Traitify test
+			Have personality type be something that can be displayed on LinkedIn and job application sites like AngelList and searched for by hiring employers
+		school class project groups
+		hackathon groups
+			Try grouping like this for half the people and at the end see which half performed better and was more satisfied with team dynamic
+		Use machine learning, such as that offered by Haven, to refine ideal team size and personality composition, and the weight this has compared to other qualities in a worked
