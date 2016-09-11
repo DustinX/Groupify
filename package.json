@@ -1,0 +1,23 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "Project Ideas:",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DustinX/Hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DustinX/Hackathon/issues"
+  },
+  "homepage": "https://github.com/DustinX/Hackathon#readme"
+}
