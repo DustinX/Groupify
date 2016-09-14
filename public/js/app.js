@@ -1,4 +1,6 @@
+//input field javascript
 $( document ).ready(function() {
+  //max amount of fields you can input
   var max_fields = 12;
   var wrapper = $('.input_fields_wrap');
   var add_button = $(".add_field_button");
@@ -9,6 +11,8 @@ $( document ).ready(function() {
     if (x < max_fields) {
       x++;
       $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field">Remove</a></div>');
+    } else {
+      alert("You've reached the max amount of fields that can be entered");
     }
   });
 
