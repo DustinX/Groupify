@@ -1,34 +1,89 @@
-<!DOCTYPE HTML>
+<!doctype HTML>
 <head>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/styles.css">
+  <% include ./partials/header %>
 </head>
 <title> Groupify </title>
 <body>
-  <nav class="navbar navbar-inverse">
-    <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-   <div class="collapse navbar-collapse" id="navbar-collapse-4">
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="">Home</a></li>
-      <li><a href="">Tests</a></li>
-    	<li><a href="">Sign Up</a></li>
-    	<li><a href="">Log In</a></li>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container -->
-  </nav><!-- /.navbar -->
+  <% include ./partials/navbar %>
 </div><!-- /.container-fluid -->
 <div id="header-bg">
-  <img style = "width: 1500px" src= "./images/bg.jpeg">
+  <img id="bg">
+  <h1 id="squaddie"> Squaddie </h1>
+  <h2 id="squaddie-info"> Helping companies create software teams in a innovative way </h2>
+</div>
+<div class="sections">
+  <h1> <span class="main-header-outer"> What We Do </span> </h1>
+  <p> Squaddie's goal is simple: to create new engineering teams based on their personality test. Using traitify's API, we assign each individual user into a specific engineering group based on their needs.</p>
+</div>
+<div class="div-white row">
+  <h1> <span class="main-header-outer"> How it Works </span> </h1>
+   <div class="col s4">
+     <!-- Promo Content 1 goes here -->
+     <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     	 viewBox="0 0 585 706.5" style="enable-background:new 0 0 585 706.5;" xml:space="preserve" height="100" width="200">
+     <style type="text/css">
+     	.st0{fill:#42C5E7;}
+     </style>
+     <circle class="st0" cx="269" cy="200.1" r="141.5"/>
+     <g>
+     	<g>
+     		<path class="st0" d="M269,366.7c-100.3,0-181.6,74.2-181.6,165.6c0,20.9,4.2,40.8,12,59.2c0,0,182.4,120.9,342.3-7.4l0,0
+     			c5.9-16.3,9.1-33.7,9.1-51.8C450.7,440.9,369.4,366.7,269,366.7z"/>
+     	</g>
+     </g>
+     </svg>
+     <br>
+     <p> 1.) Employer sends out assessment invite to employees </p>
+   </div>
+   <div class="col s4">
+     <!-- Promo Content 2 goes here -->
+     <img style="height: 100px; width:100px" src="/static/images/paper.png">
+     <br>
+     <p> 2.) Employee takes assessment test with Traitify's API. We use the API to get the results. </p>
+   </div>
+   <div class="col s4">
+     <!-- Promo Content 3 goes here -->
+     <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     	 viewBox="0 0 1233.1 957.3" style="enable-background:new 0 0 1233.1 957.3;" xml:space="preserve" height="100" width="200">
+     <style type="text/css">
+     	.st0{fill:#42C5E7;}
+     </style>
+     <circle class="st0" cx="626.4" cy="450.9" r="141.5"/>
+     <g>
+     	<g>
+     		<path class="st0" d="M626.4,617.6c-100.3,0-181.6,74.2-181.6,165.6c0,20.9,4.2,40.8,12,59.2c0,0,182.4,120.9,342.3-7.4l0,0
+     			c5.9-16.3,9.1-33.7,9.1-51.8C808.1,691.7,726.7,617.6,626.4,617.6z"/>
+     	</g>
+     </g>
+     <circle class="st0" cx="989.7" cy="327.4" r="141.5"/>
+     <g>
+     	<g>
+     		<path class="st0" d="M989.7,494.1c-100.3,0-181.6,74.2-181.6,165.6c0,20.9,4.2,40.8,12,59.2c0,0,182.4,120.9,342.3-7.4l0,0
+     			c5.9-16.3,9.1-33.7,9.1-51.8C1171.3,568.2,1090,494.1,989.7,494.1z"/>
+     	</g>
+     </g>
+     <circle class="st0" cx="263.1" cy="336.6" r="141.5"/>
+     <g>
+     	<g>
+     		<path class="st0" d="M263.1,503.3c-100.3,0-181.6,74.2-181.6,165.6c0,20.9,4.2,40.8,12,59.2c0,0,182.4,120.9,342.3-7.4l0,0
+     			c5.9-16.3,9.1-33.7,9.1-51.8C444.8,577.5,363.4,503.3,263.1,503.3z"/>
+     	</g>
+     </g>
+     </svg>
+     <br>
+     <p> 3.) We assign the employees into individual groups based on their results </p>
+   </div>
+
+ </div>
+<div class="sections">
+  <h1 class="main-headers">  <span class="main-header-outer"> Getting Started </span> </h1>
+  <a href="/ssn" class="button" id="btn-employee"> Employee</a>
+  <a href="/employer_verify" class="button" id="btn-employer"> Employer</a>
+</div>
+<div class="div-black">
+  <h1 id="credits"> Developed by Dustin DeHaven, Ken Wong, Brian Gabot, Tom Stognaro, Arthur Damm</h1>
 </div>
 </body>
 </html>

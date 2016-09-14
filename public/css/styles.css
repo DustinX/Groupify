@@ -22,7 +22,7 @@ p {
 h5 {
   position: absolute;
   /*bottom: 350px;*/
-  bottom: 50%;
+  bottom: 60%;
   left: 40%;
   font-size: 75px;
   color: white;
@@ -30,9 +30,32 @@ h5 {
   z-index: 100;
 }
 
-h2 {
+#squaddie {
   position: absolute;
-  bottom: 37%;
+  bottom: 40%;
+  left: 38%;
+  font-size: 80px;
+  color: white;
+  font-family: Avenir;
+  z-index: 100;
+}
+
+@media only screen (min-device-width: 500px) and (max-device-width: 770px) {
+  #squaddie {
+			bottom: 65%;
+		}
+}
+
+@media only screen and (max-device-width: 500px) {
+  #squaddie {
+			bottom: 75%;
+		}
+}
+
+
+#squaddie-info {
+  position: absolute;
+  bottom: 35%;
   left: 23%;
   font-size: 30px;
   color: white;
@@ -40,9 +63,29 @@ h2 {
   z-index: 100;
 }
 
+@media only screen (min-device-width: 500px) and (max-device-width: 770px) {
+  #squaddie-info {
+			bottom: 60%;
+		}
+}
+
+@media only screen and (max-device-width: 500px) {
+  #squaddie-info {
+			bottom: 70%;
+		}
+}
+
+
+
+.main-header-outer {
+  border-bottom: 5px solid black;
+  padding-bottom: 20px;
+}
+
 h1 {
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 p {
@@ -127,17 +170,19 @@ a {
 .div-white {
   background-color: white;
   padding: 70px;
+  text-align: center;
 }
 
 .div-black {
   background-color: black;
   margin-top: 200px;
-  height: 100px;
+  height: 200px;
 }
 
 #credits {
   color: white;
   font-size: 18px;
+  padding-top: 100px;
 }
 
 
@@ -203,4 +248,36 @@ ul li {
   border-bottom: 2px solid black;
   padding-right: 50px;
   float: left;
+}
+
+.s4 {
+  margin-top: 50px;
+}
+
+.employee-box {
+  width: 700px;
+  height: 250px;
+  border: 1px solid black;
+  background-color: #faffd4;
+}
+
+.company-employee-box {
+  border: 1px solid black;
+  background-color: #faffd4;
+  width: 700px;
+  height: 170px;
+}
+
+#submit-button {
+  margin-left: 20px;
+}
+
+#employee-submit-button {
+  margin-left: 20px;
+}
+
+.s6 {
+  background-color: #fb8c00;
+  border: solid 1px white;
+  color: white;
 }

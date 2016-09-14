@@ -1,0 +1,18 @@
+<html>​
+  <head>​
+    <% include ./partials/header %>
+    <script src="https://cdn.traitify.com/js/widgets/v1.js"></script>
+  </head>​
+  <body>​
+    <% include ./partials/navbar %>
+    <div class="assessment"></div>​
+    <script>
+    // jivq102kimfjildqmfdlr3i7k
+      Traitify.setPublicKey("7buclv4pit5ejougdffneq22qm");
+      Traitify.setHost("https://api-sandbox.traitify.com");
+      Traitify.setVersion("v1");
+      var assessmentId = '77623da2-fdf2-47b6-a189-443859be1634';
+      Traitify.ui.load(assessmentId, ".assessment");
+    </script>​
+  </body>​
+​</html>

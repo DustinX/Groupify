@@ -1,34 +1,29 @@
 <!DOCTYPE HTML>
 <head>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/static/css/styles.css">
+  <% include ./partials/header %>
 </head>
 <title> Groupify </title>
 <body>
-  <nav class="navbar navbar-inverse">
-    <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-   <div class="collapse navbar-collapse" id="navbar-collapse-4">
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="">Home</a></li>
-      <li><a href="">Tests</a></li>
-    	<li><a href="">Sign Up</a></li>
-    	<li><a href="">Log In</a></li>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container -->
-  </nav><!-- /.navbar -->
-</div><!-- /.container-fluid -->
-<div id="header-bg">
-  <img style = "width: 1500px" src= "./images/bg.jpeg">
-</div>
+  <% include ./partials/navbar %>
+
+<h1><span class="main-header-outer"> Employee Form </span></h1>
+
+<div class="employee-box row">
+   <form class="col s12">
+     <div class="row">
+       <div class="input-field col s12">
+         <input value="XXX-XX-XXXX" id="first_name2" type="text" class="validate">
+         <label class="active" for="SSN">SSN</label>
+       </div>
+       <div class="input-field col s12">
+         <input id="first_name2" type="text" class="validate">
+         <label class="active" for="first_name2">Company Name</label>
+       </div>
+     </div>
+   </form>
+   <a id="submit-button" href="/traitify"><button type="button" class="btn btn-success">Submit</button></a>
+ </div>
+
+
 </body>
 </html>

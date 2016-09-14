@@ -15,6 +15,26 @@ app.get('/', function(req,res){
 	res.render('index');
 });
 
+//route to ssn entry page
+app.get('/ssn', function (req,res){
+	res.render('ssn');
+})
+
+//route to traitify test page
+app.get('/traitify', function (req,res){
+	res.render('traitify');
+})
+
+//route to groups page
+app.get('/groups', function (req,res){
+	res.render('group');
+})
+
+//route to groups page
+app.get('/employer_verify', function (req,res){
+	res.render('employer_verify');
+})
+
 //connects server to local port 3000
 app.listen(process.env.PORT  || 3000, function (){
   console.log("listening on port 3000");

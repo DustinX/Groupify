@@ -274,10 +274,12 @@ function displayGroups(answer){
 
   var holder = document.createElement("div");
   // holder.className = "class_to_add";
+  holder.className = "row";
 
   answer.forEach(function(object, index){
     let group = document.createElement("div");
-    group.className = "group col-md-6";
+    // group.className = "group col-md-6";
+    group.className = "col s6";
     group.innerText = "Group " + (index + 1) + "\n";
     for(let skill in object){
       group.innerText += skill + ": " + object[skill] + "\n";
@@ -285,10 +287,10 @@ function displayGroups(answer){
     group.innerText += "\n";
     holder.appendChild(group);
 
+
   })
 
   document.body.appendChild(holder);
-
 
 
 }
