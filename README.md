@@ -18,7 +18,7 @@ Improves employee retention.
 Improves committment and energy for project.
 
 Questions:
-	?Thomas insights on 
+	?Thomas insights on
 		team composition
 		leadership
 		team sizes
@@ -39,13 +39,7 @@ Questions:
 APIs:
 Traitify
 
-
-
-
-
-
-
-
-
-
 Work on what would be interesting.  Don't worry about winning.
+
+#Link to App:
+https://squaddie.herokuapp.com/
