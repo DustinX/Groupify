@@ -1,8 +1,7 @@
 # Hackathon
 
 
-
-Link to working grouping algorithm
+#Link to grouping algorithm:
 https://jsbin.com/yoremas/2/edit?js,output
 
 
