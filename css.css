@@ -1,0 +1,21 @@
+table{
+  display: inline-block;
+  text-align: justify;
+}
+
+div{
+  display: inline-block;
+  padding-left: 2em;
+}
+
+#answer{
+  top: 0px;
+  position: absolute;
+}
+
+#ungroupedTable{
+  padding-left: 4em;
+}
+table td {
+    width: 1.5em;
+}
